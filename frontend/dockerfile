@@ -2,6 +2,13 @@
 FROM node:18 as build
 
 WORKDIR /frontend
+
+# Fix common Windows/WSL2 networking issues during npm install
+RUN npm config delete proxy \
+    && npm config delete https-proxy \
+    && npm config set registry https://registry.npmjs.org/ \
+    && npm config set dns-result-order ipv4first
+
 COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
