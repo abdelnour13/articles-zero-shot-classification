@@ -1,0 +1,16 @@
+auto_mix_prep==0.2.0
+datasets==4.1.1
+fastapi==0.117.1
+pandas==2.3.2
+pydantic==2.11.9
+redis==6.4.0
+regex==2024.11.6
+SQLAlchemy==2.0.37
+transformers==4.51.3
+uvicorn==0.35.0
+python-multipart==0.0.20
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+uvicorn[standard]
+websockets==15.0.1
