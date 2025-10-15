@@ -16,7 +16,11 @@ docker compose build backend
 ## Run
 
 ```
-docker compose up
+docker compose up backend
+```
+
+```
+docker compose up frontend
 ```
 
 Then go to `http://0.0.0.0:3000`
